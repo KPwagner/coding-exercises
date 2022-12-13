@@ -31,7 +31,7 @@ t.length == s.length
 s and t consist of any valid ascii character.
 
 ### Solution Notes:
-Interesting one-liner exists using `set()` and `zip()` built-in function:
+Interesting one-liner exists using `set()` and `zip()` built-in functions:
 ```py
     return len(set(zip(s, t))) == len(set(s)) == len(set(t))
 ```
@@ -39,7 +39,7 @@ or
 ```py
     return len(s)==len(t) and len(set(zip(s,t)))==len(set(s)) and len(set(s))==len(set(t))
 ```
-`zip()` creates the mapping relationsship for each element in s and t. `set()` removes duplicates. The lengths should be the same if isomorphic rules followed.
+`zip()` creates the mapping relationship for each element in s and t. `set()` removes duplicates. The lengths should be the same if isomorphic rules followed.
 ```py
     >>> s = 'abab'
     >>> t = 'baba'
